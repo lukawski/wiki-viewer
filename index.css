@@ -1,0 +1,65 @@
+body {
+    background: #3F51B5;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.search {
+    margin: 0 auto;
+}
+
+input {
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+}
+
+.result {
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px 10px 15px;
+    margin: 20px 0px 20px 0px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    transition: all .2s;
+}
+
+.result:hover {
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.85);
+}
+
+.result a {
+    font-weight: 700;
+    margin-top: 10px;
+}
