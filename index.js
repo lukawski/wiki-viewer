@@ -9,7 +9,7 @@ $(function () {
                  var descriptions = r[2]
                  var links = r[3]
                  for(var i = 0; i < results.length; i++) {
-                    $('#content').append('<div class="result"><h3>' + results[i] + '</h3>' + descriptions[i] +'<br><a href=' + links[i] + ' target="_blank">More</a></div>')
+                    $('#content').append('<div class="result"><h3>' + results[i] + '</h3><p>' + descriptions[i] +'</p><a href=' + links[i] + ' target="_blank">More</a></div>')
                  }
       })
     }
