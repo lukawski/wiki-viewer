@@ -1,20 +1,11 @@
 body {
-    background: #3F51B5;
-}
-
-.container {
-    margin-top: 10px;
-}
-
-.search {
-    margin: 0 auto;
+    padding: 5px;
 }
 
 input {
     background: rgba(255, 255, 255, 0);
     border: none;
     font-size: 20px;
-    padding-left: 5px;
 }
 
 input:focus {
@@ -37,10 +28,6 @@ a:visited {
     color: black;
 }
 
-h3 {
-    margin: 0 0 10px 0;
-}
-
 .result {
     background: white;
     width: 100%;
@@ -59,7 +46,10 @@ h3 {
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.85);
 }
 
+h3 {
+    margin: 0 0 10px 0;
+}
+
 .result a {
     font-weight: 700;
-    margin-top: 10px;
 }
