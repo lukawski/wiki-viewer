@@ -14,13 +14,13 @@ input:focus {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #1a1a1a;
     transition: .2s;
 }
 
 a:hover {
     text-decoration: none;
-    color: grey;
+    color: black;
 }
 
 a:visited {
