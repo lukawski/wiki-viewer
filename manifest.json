@@ -4,7 +4,6 @@
     "name": "Wiki Viewer",
     "description": "Search entire wikipedia library with a single click.",
     "version": "1.0",
-    "default_locale": "en",
     "author": "Scuer",
 
     "browser_action": {
