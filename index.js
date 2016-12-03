@@ -21,6 +21,8 @@ $(function () {
       })
   }
 
+  if(localStorage.getItem('lastSearched') !== null) $('#lS').text(localStorage.getItem('lastSearched'))
+
   if (localStorage.getItem('currentSearch') !== null) {
     $('#search').val(localStorage.getItem('currentSearch'))
     wikiCall(localStorage.getItem('currentSearch'))
@@ -28,6 +30,7 @@ $(function () {
 
   $('#search').keyup(function (e) {
     localStorage.setItem('currentSearch', $(this).val())
+    localStorage.setItem('lastSearched', $(this).val())
     wikiCall($(this).val())
   })
 })
