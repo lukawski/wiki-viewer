@@ -5,7 +5,7 @@
     "description": "Search entire wikipedia library with a single click.",
     "version": "1.0",
     "author": "Scuer",
-
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
     "browser_action": {
         "default_icon": "icon_128.png",
         "default_popup": "index.html"
