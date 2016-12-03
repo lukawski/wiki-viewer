@@ -28,6 +28,10 @@ $(function () {
     wikiCall(localStorage.getItem('currentSearch'))
   }
 
+  $('#lS').click(function () {
+    wikiCall($(this).text())
+  })
+
   $('#search').keyup(function (e) {
     localStorage.setItem('currentSearch', $(this).val())
     localStorage.setItem('lastSearched', $(this).val())

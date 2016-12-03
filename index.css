@@ -13,6 +13,10 @@ input:focus {
     outline: none;
 }
 
+#lS {
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
     color: #1a1a1a;
