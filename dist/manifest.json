@@ -3,7 +3,7 @@
 
     "name": "Wiki Viewer",
     "description": "Search entire wikipedia library with a single click.",
-    "version": "1.0",
+    "version": "1.1",
     "author": "Scuer",
     "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
     "browser_action": {
