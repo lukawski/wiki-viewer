@@ -46,7 +46,9 @@ $(function () {
 
   $('#search').keyup(function (e) {
     localStorage.setItem('currentSearch', $(this).val())
-    localStorage.setItem('lastSearched', $(this).val())
-    if ($(this).val().length > 0) wikiCall($(this).val())
+    if ($(this).val().length > 0){
+      wikiCall($(this).val())
+      localStorage.setItem('lastSearched', $(this).val())
+    }
   })
 })
