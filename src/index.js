@@ -6,7 +6,7 @@
 ga('create', 'UA-88419205-1', 'auto');
 ga('send', 'pageview');
 var langOpt = ''
-chrome.storage.sync.get(['lang'], function (items) {
+chrome.storage.sync.get({'lang': 'en'}, function (items) {
   langOpt = items.lang
 })
 $(function () {

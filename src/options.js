@@ -11,7 +11,7 @@ function saveOptions() {
 }
 
 function restoreOptions() {
-  chrome.storage.sync.get(['lang'], function (items) {
+  chrome.storage.sync.get({'lang': 'en'}, function (items) {
     console.log(items.lang)
     document.getElementById('lang').value = items.lang
   }) 
