@@ -17,7 +17,7 @@
     },
 
     "permissions": [
-        "https://en.wikipedia.org/w/api.php",
+        "https://*.wikipedia.org/w/api.php",
         "storage"
     ]
 }
