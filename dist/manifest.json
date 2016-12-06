@@ -11,8 +11,13 @@
         "default_icon": "icon_128.png",
         "default_popup": "index.html"
     },
+  
+    "options_ui": {
+      "page": "option.html"
+    },
 
     "permissions": [
-        "https://en.wikipedia.org/w/api.php"
+        "https://*.wikipedia.org/w/api.php",
+        "storage"
     ]
 }

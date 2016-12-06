@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 5px 5px 5px 5px;
+}
+
+footer {
+    color: grey;
+    border-top: 1px solid #cccccc;
+    padding: 5px;
+}

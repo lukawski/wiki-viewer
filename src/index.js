@@ -5,12 +5,15 @@
 
 ga('create', 'UA-88419205-1', 'auto');
 ga('send', 'pageview');
-
+var langOpt = ''
+chrome.storage.sync.get(['lang'], function (items) {
+  langOpt = items.lang
+})
 $(function () {
-  function wikiCall (query) {
+  function wikiCall (query, lang) {
     $('#content').empty()
     $.getJSON(
-      'https://en.wikipedia.org/w/api.php?action=opensearch&list=search&search=' + query + '&utf8&format=json',
+      'https://' + lang + '.wikipedia.org/w/api.php?action=opensearch&list=search&search=' + query + '&utf8&format=json',
       function (r) {
         if (r[1].length > 0) {
           var results = r[1]
@@ -37,17 +40,17 @@ $(function () {
 
   if (localStorage.getItem('currentSearch')) {
     $('#search').val(localStorage.getItem('currentSearch'))
-    wikiCall(localStorage.getItem('currentSearch'))
+    wikiCall(localStorage.getItem('currentSearch'), langOpt)
   }
 
   $('#lS').click(function () {
-    wikiCall($(this).text())
+    wikiCall($(this).text(), langOpt)
   })
 
   $('#search').keyup(function (e) {
     localStorage.setItem('currentSearch', $(this).val())
     if ($(this).val().length > 0){
-      wikiCall($(this).val())
+      wikiCall($(this).val(), langOpt)
       localStorage.setItem('lastSearched', $(this).val())
     }
   })
